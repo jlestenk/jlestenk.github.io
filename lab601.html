@@ -64,9 +64,10 @@
       $("#button1").click( function() {
         console.log("clicked button1.");
         $("#Daisy").fadeToggle();})
+      
     $("#clicktoreveal1").click(function(){
-        console.log("clicked clicktoreveal1.")
-        $(#clicktoreveal1").text("This document is for Lab 6 of my Web Mapping class. Hello Dr. Parr!") });
+          console.log("clicked clicktoreveal1.")
+        $(#hidden_text").text("This document is for lab 6 of my Web Mapping class. Hello Dr. Parr!") });
       });
 
   </script>
@@ -92,7 +93,8 @@
 
   
     <h2>What is this for?</h2>
-      <button id="clicktoreveal1">Click to reveal!</button>
+    <div id= "hidden_text"> <button id="clicktoreveal1">Click to reveal!</button>
+    </div>
   
 
     <div id="favclothes">

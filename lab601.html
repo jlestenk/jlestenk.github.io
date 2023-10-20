@@ -58,13 +58,15 @@
 
   <script>
       //this is my javascript
+    console.log("started javascript");
+    
     $(document).ready( function() {
       $("#button1").click( function() {
         console.log("clicked button1.");
         $("#Daisy").fadeToggle();})
     $("#clicktoreveal1").click(function(){
         console.log("clicked clicktoreveal1.")
-        $(#clicktoreveal1").html("This document is for Lab 6 of my Web Mapping class. Hello Dr. Parr!") });
+        $(#clicktoreveal1").text("This document is for Lab 6 of my Web Mapping class. Hello Dr. Parr!") });
       });
 
   </script>

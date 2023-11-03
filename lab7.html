@@ -29,7 +29,15 @@
     }).addTo(map);
 
     var marker = L.marker([47.30316,-122.43265]).addTo(map);
-      marker.bindPopup("<b>Browns Point, where I grew up!</b><br>This was my childhood home.").openPopup();
+      marker.bindPopup("This was my childhood home.");
+    
+    var circle = L.circle([47.30568,-122.44348], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+      circle.bindPopup("The local beach!.");
+
     
     </script>
 

@@ -47,6 +47,12 @@
 ]).addTo(map);
        polygon.bindPopup("My elementary school.");
 
+    var popup = L.popup()
+    .setLatLng([47.3034,-122.4372])
+    .setContent("<b>Browns Point, Tacoma, WA</b><br>Where I grew up!.")
+    .openOn(map);
+
+
     </script>
 
   </body>

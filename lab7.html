@@ -39,7 +39,14 @@
     }).addTo(map);
       circle.bindPopup("The local beach!.");
 
-    
+    var polygon = L.polygon([
+    [47.30291,-122.42789],
+    [47.30291,-122.42259],
+    [47.30103,-122.42255],
+    [47.30112,-122.42788]
+]).addTo(map);
+       polygon.bindPopup("My elementary school.");
+
     </script>
 
   </body>

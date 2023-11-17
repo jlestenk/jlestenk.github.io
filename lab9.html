@@ -73,11 +73,11 @@
     //function to style my cholopleth map
     function style1(feature) {d = feature.properties.PCT_AGE65PLUS;
 		answer = d > 30 ? '#800026' : 
-				d > 20 ? '#DB0026' : 
-				d > 15 ? '#E31A1C' : 
-				d > 10 ? '#FC4E2A' : 
-				d > 5 ? '#FD8D3C' : 
-					d > 3 ? '#FEB24C' : 
+				d > 30 ? '#DB0026' : 
+				d > 20 ? '#E31A1C' : 
+				d > 15 ? '#FC4E2A' : 
+				d > 10 ? '#FD8D3C' : 
+					d > 5 ? '#FEB24C' : 
 					d > 1 ? '#FED976' : 
 							'#FFEDA0';
 			styleReturn = {
@@ -99,7 +99,7 @@
 			acsDenver2021Layer = L.geoJSON(data, { style: style1,
 				 onEachFeature : function(feature, layer) {
 				layer.bindPopup("Percent Age 65 Plus: " + 
-				feature.properties.AGE_65PLUS + "%");
+				feature.properties.PCT_AGE65PLUS + "%");
 }
 							     }).addTo(map);
 			

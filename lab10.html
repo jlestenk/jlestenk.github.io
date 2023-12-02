@@ -87,9 +87,8 @@
 
     //function to style my cholopleth map
     function style1(feature) {d = feature.properties.PCT_AGE65PLUS;
-		answer = d > 30 ? '#800026' : 
-				d > 30 ? '#DB0026' : 
-				d > 20 ? '#E31A1C' : 
+		answer = d > 30 ? '#800026' :  
+				d > 20 ? '#DB0026' : 
 				d > 15 ? '#FC4E2A' : 
 				d > 10 ? '#FD8D3C' : 
 					d > 5 ? '#FEB24C' : 
@@ -135,7 +134,7 @@
 
 		legend.onAdd = function (map) {
 			var div = L.DomUtil.create('div', 'info legend');
-			colors = ['#FFEDA0', '#FED976', '#FEB24C', '#FD8D3C', '#FC4E2A', '#E31A1C', '#DB0026', '#800026'];
+			colors = ['#FFEDA0', '#FED976', '#FEB24C', '#FD8D3C', '#FC4E2A', '#DB0026', '#800026'];
 			labels = ['0 - 1%', '1 - 5%', '5 - 10%', '10 - 15%', '15 - 20%', '20 - 30%', '30%+'];
 			
 			div.innerHTML = '<h2>% Over 65</h2><br>';

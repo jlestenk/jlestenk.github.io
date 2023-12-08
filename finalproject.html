@@ -95,7 +95,7 @@
 			//convert the file (data) into a layer
 			acsDenver2021Layer = L.geoJSON(data, { style: style1,
 				 onEachFeature : function(feature, layer) {
-				layer.bindPopup("Children Age 0 to 9: " + 
+				layer.bindPopup("Children Age 0-9: " + 
 				feature.properties.AGE_0_TO_9);
 }
 							     }).addTo(map);

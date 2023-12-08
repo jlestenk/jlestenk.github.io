@@ -93,7 +93,7 @@
 		// let's add the Denver ACS data -- ##4 here
 		$.getJSON('./acs_denver_2021.geojson', function(data) {
 			//convert the file (data) into a layer
-			acsDenver2021Layer = L.geoJSON(data, , { style: style1,
+			acsDenver2021Layer = L.geoJSON(data, { style: style1,
 				 onEachFeature : function(feature, layer) {
 				layer.bindPopup("Children Age 0 to 9: " + 
 				feature.properties.AGE_0_TO_9);

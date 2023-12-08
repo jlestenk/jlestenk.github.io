@@ -83,6 +83,13 @@
 			layerControl.addOverlay(acsDenver2021Layer, "Census 2021");
 		});
 
+		//child care data
+		$.getJSON('./licensed_child.geojson', function(data) {
+			//convert to layer
+			licensedChildLayer = L.geoJSON(data).addTo(map);
+			//layer control
+			layerControl.addOverlay(licensedChildLayer, "Licensed Childcare");
+		});
 
 	// end document ready
 	});

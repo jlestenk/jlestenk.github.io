@@ -143,6 +143,12 @@
 		};
 
 		legend.addTo(map);
+
+	//click to view
+		  $("#clicktoview").click(function(){
+          console.log("clicked clicktoview.")
+        $("#hidden_text").text("Hello Dr. Parr!"); });
+      });
 	// end document ready
 	});
 
@@ -156,6 +162,10 @@
 </div>
 	
 <div id="map"></div>
+
+<h2>Sources</h2>
+    <div id= "hidden_text"> <button id="clicktoview">Click to view</button>
+    </div>
 
 
 </body>

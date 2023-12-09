@@ -139,6 +139,10 @@
 
 		legend.addTo(map);
 
+	 $("#button1").click( function() {
+        console.log("clicked button1.");
+        $("#map").toggle();})
+
 
 	// end document ready
 	});
@@ -153,6 +157,7 @@
 </div>
 	
 <div id="map"></div>
+<button id="button1">Hide map</button>
 
 <h2>Sources</h2>
    <p>American Community Survey Blk Grp 2017-2022 <a href="https://denvergov.org/opendata/dataset/city-and-county-of-denver-american-community-survey-blk-grp-2017-2021">Denver Open Data</a></p>
